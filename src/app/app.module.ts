@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './dropdown.directive';
 import { DegreeComponent } from './degree/degree.component';
-import { CoursesComponent } from './courses/courses.component';
+import { CourseListComponent } from './course-list/course-list.component';
+import { CourseListService } from './course-list/course-list.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +16,14 @@ import { CoursesComponent } from './courses/courses.component';
     HeaderComponent,
     DropdownDirective,
     DegreeComponent,
-    CoursesComponent
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [CourseListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
