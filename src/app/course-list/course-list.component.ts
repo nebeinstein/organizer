@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 import { Course } from '../course';
 import { CourseListService } from './course-list.service';
@@ -10,11 +10,16 @@ import { CourseListService } from './course-list.service';
 })
 export class CourseListComponent implements OnInit {
 	courses: Course[] = [];
+	@Output() showNewCourse: boolean = false;
 
  	constructor(private cls: CourseListService) { }
 
 	ngOnInit() {
 		this.courses = this.cls.getCourses();
+	}
+
+	newCourse(){
+		this.showNewCourse = true;
 	}
 
 }
