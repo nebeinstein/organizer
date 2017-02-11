@@ -8,7 +8,7 @@ export class CourseListService {
 	private courses: Course[] = [];
 
 	constructor() {
-		this.addCourses([new Course("Physics I"), new Course("Physics II"), new Course("Intermediate Mechanics")]);
+		this.addCourses([new Course("Physics I","PH","1111",3.000,"Dr. Butters", "A 2012"), new Course("Physics II","PH","1121",3.000,"Dr. Butters", "B 2012"), new Course("Intermediate Mechanics I","PH","2201",3.000,"Professor Quimby", "A 2013")]);
 	}
 
 	getCourses(){

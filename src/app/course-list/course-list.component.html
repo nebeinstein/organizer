@@ -1,3 +1,18 @@
-<p>
-  course-list works!
-</p>
+<table>
+  <tr>
+    <th>Course Name</th>
+    <th>Department</th>
+    <th>Number</th>
+    <th>Credits</th>
+    <th>Professor</th>
+    <th>Semester</th>
+  </tr>
+  <tr *ngFor="let course of courses">
+    <td>{{course.name}}</td>
+    <td>{{course.department}}</td>
+    <td>{{course.number}}</td>
+    <td>{{course.credits}}</td>
+    <td>{{course.professor}}</td>
+    <td>{{course.semester}}</td>
+  </tr>
+</table>
