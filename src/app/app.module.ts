@@ -9,7 +9,6 @@ import { DropdownDirective } from './dropdown.directive';
 import { DegreeComponent } from './degree/degree.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseListService } from './course-list/course-list.service';
-import { CourseListAddComponent } from './course-list/course-list-add/course-list-add.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { CourseListAddComponent } from './course-list/course-list-add/course-lis
     HeaderComponent,
     DropdownDirective,
     DegreeComponent,
-    CourseListComponent,
-    CourseListAddComponent
+    CourseListComponent
   ],
   imports: [
     BrowserModule,

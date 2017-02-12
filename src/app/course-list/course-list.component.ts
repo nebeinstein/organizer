@@ -10,7 +10,7 @@ import { CourseListService } from './course-list.service';
 })
 export class CourseListComponent implements OnInit {
 	courses: Course[] = [];
-	@Output() showNewCourse: boolean = false;
+	showNewCourse: boolean;
 
  	constructor(private cls: CourseListService) { }
 
@@ -20,6 +20,10 @@ export class CourseListComponent implements OnInit {
 
 	newCourse(){
 		this.showNewCourse = true;
+	}
+
+	cancelAdd(){
+		this.showNewCourse = false;
 	}
 
 }
