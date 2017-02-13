@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Course } from '../course';
 
 @Injectable()
-export class CourseListService {
+export class CoursesService {
 
 	private courses: Course[] = [];
 
