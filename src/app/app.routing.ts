@@ -4,10 +4,12 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { DegreeComponent } from './degree/degree.component';
 import { HomeComponent } from './home/home.component';
+import { ProfessorListComponent} from './professor-list/professor-list.component';
 
 
 const APP_ROUTES: Routes = [
 	{ path: 'calendar', component: CalendarComponent },
+	{ path: 'professors', component: ProfessorListComponent },
 	{ path: 'courses', component: CourseListComponent },
 	{ path: 'degree', component: DegreeComponent },
 	{ path: '', component: HomeComponent }
