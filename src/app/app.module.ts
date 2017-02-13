@@ -12,6 +12,7 @@ import { CourseListService } from './course-list/course-list.service';
 import { DropdownDirective } from './dropdown.directive';
 
 import { Routing } from './app.routing';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Routing } from './app.routing';
     HeaderComponent,
     DegreeComponent,
     CourseListComponent,
-    DropdownDirective
+    DropdownDirective,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
