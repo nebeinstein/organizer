@@ -17,6 +17,8 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { HomeComponent } from './home/home.component';
 import { ProfessorListComponent } from './professor-list/professor-list.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CourseDetailComponent } from './courses/course-detail/course-detail.component';
+import { CourseItemComponent } from './courses/course-list/course-item/course-item.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { CoursesComponent } from './courses/courses.component';
     CalendarComponent,
     HomeComponent,
     ProfessorListComponent,
-    CoursesComponent
+    CoursesComponent,
+    CourseDetailComponent,
+    CourseItemComponent
   ],
   imports: [
     BrowserModule,

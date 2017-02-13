@@ -1,1 +1,8 @@
-<co-course-list></co-course-list>
+<div class = "row">
+	<div class = "col-md-5">
+		<co-course-list (courseSelected)="selectedCourse=$event"></co-course-list>
+	</div>
+	<div class = "col-md-7">
+		<co-course-detail [selectedCourse] = "selectedCourse"></co-course-detail>
+	</div>
+</div>
